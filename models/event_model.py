@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Optional
-from dataclass_wizard import JSONWizard
-
+from dataclass_wizard import JSONWizard,JSONSerializable
+from pymongo import MongoClient
 
 @dataclass
 class EventManager(JSONWizard):
@@ -11,6 +11,11 @@ class EventManager(JSONWizard):
     capacity: int
     price: float
     tickets_booked: int
+def save(self):
+        # connect to the database
+    client = MongoClient("mongodb://localhost:27017")
+    db = client["eventmanager"]
+    collection = db["events"]
 
 
 @dataclass

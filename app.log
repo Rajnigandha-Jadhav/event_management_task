@@ -1,0 +1,7 @@
+2023-04-10 14:39:18,316 - logs.logger - ERROR - {'name': ['Not a valid string.']}
+2023-04-11 12:35:22,698 - logs.logger - ERROR - 'tickets_booked'
+2023-04-11 14:40:44,499 - logs.logger - ERROR - 'tickets_booked'
+2023-04-11 14:42:51,605 - logs.logger - ERROR - 'tickets_booked'
+2023-04-11 14:48:46,519 - logs.logger - ERROR - 'tickets_booked'
+2023-04-11 14:54:54,536 - logs.logger - ERROR - 'tickets_booked'
+2023-04-11 14:55:13,394 - logs.logger - ERROR - 'tickets_booked'

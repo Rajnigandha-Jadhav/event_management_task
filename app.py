@@ -23,6 +23,7 @@ def create_event():
             return "Please provide some data", 400
 
         events = event_schema.load(event_data)
+        print(type(events))
         event_Data = EventManager(name=events.name, date=events.date,
                                   location=events.location, capacity=events.capacity, price=events.price, tickets_booked=events.tickets_booked)
         event_info = vars(event_Data)

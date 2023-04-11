@@ -16,7 +16,7 @@ DB_NAME = os.environ.get('DATABASE_NAME')
 
 client = MongoClient(MONGODB_URI)
 db = client[DB_NAME]
-
+eventCollection = db.events
 
 
 
