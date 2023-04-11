@@ -29,7 +29,7 @@ class EventManagementSystemTest(unittest.TestCase):
         response = app.test_client().get('/all-events')
 
         # Check if the response is successful and returns a list of events
-        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.status_code, 200)
         self.assertIsInstance(json.loads(response.data), list)
 
     # Test book ticket API
@@ -55,7 +55,9 @@ class EventManagementSystemTest(unittest.TestCase):
 
         # Check if the response is successful and returns a list of tickets
         self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.content_type, 'application/json')
         self.assertIsInstance(json.loads(response.data), list)
+
 
 if __name__ == '__main__':
     unittest.main()
